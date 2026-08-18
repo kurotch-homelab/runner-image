@@ -67,7 +67,7 @@ jobs:
             test "$(id -u)" = "1001"
             test "$(id -g)" = "1001"
             test -x /home/runner/run.sh
-            dpkg-query -W -f="${Status}\n" libatomic1 | grep -F "install ok installed"
+            dpkg-query -W -f="\${Status}\n" libatomic1 | grep -F "install ok installed"
             /sbin/ldconfig -p | grep -F "libatomic.so.1"
             grep -R -F "https://ftp.udx.icscoe.jp/Linux/ubuntu" /etc/apt
           '
