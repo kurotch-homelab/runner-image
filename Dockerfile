@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 
-FROM ghcr.io/actions/actions-runner:2.336.0
+FROM ghcr.io/actions/actions-runner:2.338.2
 
 ARG APT_MIRROR="https://ftp.udx.icscoe.jp/Linux/ubuntu"
 
